@@ -83,7 +83,7 @@ function Form() {
         <div className="btns">
           <Link to="/users">
             {/*from  here you can go to another page while clicking on data button */}
-            <button className="cancel">Data</button>
+            <button className="data">Data</button>
           </Link>
           <button type="submit">SUBMIT  </button>
         </div>
