@@ -56,7 +56,7 @@ function Form() {
               id="dob"
               className="wid-style"
               name=" dob"
-              placeholder="DD/MM/YYYY or Age in years"
+              placeholder="age"
               {...register("dob")}
             />
             <label htmlFor="sex" className="required-field">
