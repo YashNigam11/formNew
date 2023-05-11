@@ -9,6 +9,7 @@ export default function Datasheet() {
     const fetchData = async () => {
       const result = await axios.get("http://localhost:8080/user");
       console.log(result.data);
+      //here we need to to set data in the users where we can filter it out
       setUsers(result.data.data);
     };
     fetchData();
@@ -27,7 +28,9 @@ export default function Datasheet() {
             <th>Mobile</th>
           </tr>
         </thead>
+      {/* data is being visible when the form is filled */}
         <tbody>
+          
           {users.map((user) => (
             <tr key={user._id}>
               <td>{user.name}</td>

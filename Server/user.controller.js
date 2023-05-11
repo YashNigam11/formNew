@@ -1,5 +1,5 @@
 const userModel = require("./user.schema");
-
+//create  a new user model with the form data 
 const userController = {
   createUser: async (req, res) => {
     try {

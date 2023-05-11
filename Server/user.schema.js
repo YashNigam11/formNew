@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+// here we need to make schema in which form the data is being posted into db
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   age: { type: Number, required: true },

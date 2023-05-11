@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+// model instance
 const dataSchema = mongoose.Schema({
   name: {
     type: String,

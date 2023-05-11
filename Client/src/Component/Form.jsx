@@ -18,6 +18,7 @@ function Form() {
       dob: data.dob,
       mobile: data.mobile,
     };
+    //posting from data with the hep of axios using method post
     axios
       .post("http://localhost:8080/user/add", postData)
       .then((response) => {
@@ -33,8 +34,10 @@ function Form() {
   return (
     <div className="form-elements">
       <h2>Personal Details</h2>
+      {/* using onsubmit function for submiting form data */}
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="personal-details">
+          {/* in this personal details form elements are mentioned */}
           <div>
             <label htmlFor="name" className="required-field">
               Name{" "}
@@ -79,9 +82,10 @@ function Form() {
         </div>
         <div className="btns">
           <Link to="/users">
-            <button className="cancel">CANCEL (ESC)</button>
+            {/*from  here you can go to another page while clicking on data button */}
+            <button className="cancel">Data</button>
           </Link>
-          <button type="submit">SUBMIT (Ctrl S) </button>
+          <button type="submit">SUBMIT  </button>
         </div>
       </form>
     </div>
