@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
+  padding: 6px;
+}
+h2 {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+form {
+  display: inline-block;
+}
+label {
+  display: inline-block;
+  margin: 10px;
+  padding: 6px;
+  font-size: 18px;
+}
+input {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 1.2rem;
+  border-radius: 0.25rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.required-field::after{
+  content: " * ";
+  color: red;
+}
+button:hover {
+  background-color: #3e8e41;
+}
+
+span {
+  color: red;
+  margin-top: 0.25rem;
+}
+.btns {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  margin: 30px;
+}
+ .cancel {
+  color: red;
+  border: 2px solid red;
+  background-color: #fff;
+}
+
+.cancel:hover {
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+} 
+
+
